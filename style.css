@@ -1,14 +1,21 @@
 body {
     background-color: #333;
     overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 #featureAnimation {
     background-color: #eee;
     height: 250px;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 970px;
-    margin: 400px auto;
+    margin: auto;
 }
 .snowflake {
     position: absolute;
