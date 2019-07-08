@@ -13,7 +13,7 @@ function control() {
     flake = $("<img class='snowflake' src='snowflake.png'</img>").appendTo(bg)[0];
     TweenMax.set(flake, {x:485, y:-350});
     delay = Math.random() * duration;
-    flakes.to(flake, duration, {physics2D:{velocity:Math.random() * 100 + 150, angle:Math.random() * 180 , gravity:10}, rotation: 35}, delay);
+    flakes.to(flake, duration, {repeat: -1, physics2D:{velocity:Math.random() * 100 + 150, angle:Math.random() * 180 , gravity:10}, rotation: 35}, delay);
   }
   return flakes;
 }
