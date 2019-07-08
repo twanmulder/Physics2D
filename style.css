@@ -1,0 +1,80 @@
+body {
+    background-color: #333;
+    overflow: hidden;
+}
+#featureAnimation {
+    background-color: #eee;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 970px;
+    margin: 400px auto;
+}
+.snowflake {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+}
+.bg {
+    width: 970px;
+    height: auto;
+    position: absolute;
+    transition: opacity 1s;
+}
+.snowy {
+    margin-top: -100px;
+}
+.beach {
+    margin-top: -250px;
+}
+/* Reset button */
+.button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+.button:focus{
+    outline: none;
+}
+/* Normal button styling */
+.button{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 4px 0 0 1px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.button:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.flake-wrapper{
+    transition: opacity .3s;
+}
+.hidden{
+    opacity: 0;
+}
