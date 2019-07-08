@@ -14,4 +14,4 @@ The format of the test, which is 970x250, is used because this format is one tha
 ## Getting Started <a name = "getting_started"></a>
 Just clone the repository. That's it! Nothing fancy.
 
-You also just check out the demo: [Click here](https://physics2d.netlify.com/)
+You can also just check out the demo: [Click here](https://physics2d.netlify.com/)
