@@ -3,7 +3,8 @@ let master = new TimelineMax(),
     bg = document.getElementById('featureBackground'),
     snowy = document.querySelector('.snowy'),
     beach = document.querySelector('.beach'),
-    favicon = document.querySelector('link[rel="icon"]');
+    favicon = document.querySelector('link[rel="icon"]'),
+    containerWidth = 970;
 
 function control() {
   let qty = 200,
@@ -11,9 +12,9 @@ function control() {
 
   for (i = 0; i < qty; i++) {
     flake = $("<img class='snowflake' src='snowflake.png'</img>").appendTo(bg)[0];
-    TweenMax.set(flake, {x:485, y:-350});
+    TweenMax.set(flake, {x:Math.random() * containerWidth, y:-250});
     delay = Math.random() * duration;
-    flakes.to(flake, duration, {repeat: -1, physics2D:{velocity:Math.random() * 100 + 150, angle:Math.random() * 180 , gravity:10}, rotation: 35}, delay);
+    flakes.to(flake, duration, {repeat: -1, physics2D:{velocity:Math.random() * 100 + 150, angle:Math.random() * 180 , gravity:10}, rotation: Math.random() * 200 + 120}, delay);
   }
   return flakes;
 }
