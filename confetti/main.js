@@ -195,7 +195,7 @@ let frameStart = document.querySelector('.frameStart'),
 master.from([frameStart, logo], .5, {opacity: 0}, "=+.5")
       .to(frameStart, .5, {opacity: 0}, "=+1.5")
       .call(handleMousedown)
-      .from(frameEnd, .5, {opacity: 0})
+      .from(frameEnd, .5, {opacity: 0}, "=+.1")
       .to({}, .5, {})
       .call(handleMouseup)
       .from(cta, .5, {opacity: 0}, "=+2")
