@@ -189,11 +189,13 @@ shootConfetti();
 let frameStart = document.querySelector('.frameStart'),
     frameEnd = document.querySelector('.frameEnd'),
     logo = document.querySelector('.logo'),
+    cta = document.querySelector('.cta'),
     master = new TimelineMax();
 
 master.from([frameStart, logo], .5, {opacity: 0}, "=+.5")
       .to(frameStart, .5, {opacity: 0}, "=+1.5")
-      .from(frameEnd, .5, {opacity: 0})
       .call(handleMousedown)
+      .from(frameEnd, .5, {opacity: 0})
       .to({}, .5, {})
       .call(handleMouseup)
+      .from(cta, .5, {opacity: 0}, "=+2")

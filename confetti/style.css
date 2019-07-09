@@ -11,6 +11,8 @@ body {
   user-select: none;
   overflow: hidden;
   background: #222;
+  font-family: 'futura', 'helvetica', sans-serif;
+  color: #fafafa;
 }
 .canvas-wrapper{
   position: absolute;
@@ -40,8 +42,6 @@ body {
   top: -10px;
 }
 .text {
-  font-family: 'futura', 'helvetica', sans-serif;
-  color: #fafafa;
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -51,8 +51,6 @@ body {
   text-align: center;
 }
 .subtext {
-  font-family: 'futura', 'helvetica', sans-serif;
-  color: #fafafa;
   position: absolute;
   z-index: 10;
   top: 58%;
@@ -68,4 +66,12 @@ body {
   width: 32px;
   height: 32px;
   opacity: .4;
+}
+.cta{
+  position: absolute;
+  bottom : 8px;
+  right: 10px;
+  font-size: .7rem;
+  font-style: italic;
+  opacity: .8;
 }
