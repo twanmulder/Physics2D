@@ -37,9 +37,10 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
 }
 .frameEnd{
-  top: -10px;
+  top: -20px;
 }
 .text {
   position: absolute;
@@ -65,13 +66,26 @@ body {
   left: 16px;
   width: 32px;
   height: 32px;
-  opacity: .4;
+  opacity: 0;
 }
 .cta{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: .9rem;
+  background: #fff;
+  mix-blend-mode: screen;
+  border-radius: 24px;
+  padding: 8px 32px;
+  bottom: 50px;
+  opacity: 0;
+}
+.hint{
   position: absolute;
   bottom : 8px;
   right: 10px;
   font-size: .7rem;
   font-style: italic;
-  opacity: .8;
+  opacity: 0;
 }
