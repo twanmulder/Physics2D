@@ -6,9 +6,9 @@
 
 ## About <a name = "about"></a>
 
-Snowflakes Demo: [Click here](https://physics2d.netlify.com/snow)
+❄️ Snowflakes Demo ❄️: [Click here](https://physics2d.netlify.com/snow)
 
-Spotify Confetti Demo: [Click here](https://physics2d.netlify.com/confetti)
+🎉 Spotify Confetti Demo 🎉: [Click here](https://physics2d.netlify.com/confetti)
 
 Inside this small repo are some tests focused on the Physics2D plugin from GSAP. 
 
