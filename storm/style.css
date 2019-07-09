@@ -87,6 +87,8 @@ body {
   padding: 8px 32px;
   bottom: 50px;
   opacity: 0;
+  z-index: 100;
+  pointer-events: auto;
 }
 .hint{
   position: absolute;

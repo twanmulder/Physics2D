@@ -25,6 +25,7 @@ var wrapper = document.querySelector('.canvas-wrapper');
 var canvas = document.getElementById('canvas');
 var cta = document.querySelector('.cta');
 var ctx = canvas.getContext('2d');
+var exit = 'https://www.stormdigital.nl/storm-digital-wordt-onderdeel-accenture-interactive/';
 
 var confettiSpriteIds = [];
 var confettiSprites = {};
@@ -48,7 +49,7 @@ function setupListeners() {
     canvas.addEventListener('touchmove', handleTouchmove);
     canvas.addEventListener('resize', setCanvasSize);
 
-    cta.addEventListener('mousedown', exitUrl)
+    cta.addEventListener('click', exitUrl)
 }
 
 function handleMousemove(e) {
@@ -67,7 +68,7 @@ function handleMouseup() {
     shoot = false;
 }
 function exitUrl(){
-    console.log('test');
+    window.open(exit,'_blank');
 }
 
 function addConfettiParticles(amount, angle, velocity, x, y) {
