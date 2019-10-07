@@ -1,0 +1,32 @@
+@media only screen and (max-width: 810px) {
+    .txtwrapper{
+        width: auto;
+    }
+    .previewBlock{
+        margin: 0 0 185px 0;
+        width: 100%;
+    }
+    .header{
+        padding-left: 46px;
+    }
+    .previews{
+        padding-left:  22px;
+    }
+    .mobile-warning{
+        display: block;
+    }
+
+    /*  Make certain sizes not visible on mobile    */
+    .preview-120x600{
+        display: none;
+    }
+    .preview-160x600{
+        display: none;
+    }
+    .preview-728x90{
+        display: none;
+    }
+    .preview-970x250{
+        display: none;
+    }
+}

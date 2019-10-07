@@ -21,11 +21,8 @@ body {
 }
 .canvas-wrapper{
   position: absolute;
-  width: 970px;
-  height: 250px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 728px;
+  height: 90px;
   overflow: hidden;
   /* background-image: linear-gradient(-225deg, #9EEFE1 0%, #4222F1 100%); */
   /* background-image: linear-gradient(-225deg, #FEC76C 0%, #ED3EA4 100%); */
@@ -43,12 +40,12 @@ body {
 .frame{
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 70%;
   height: 100%;
   opacity: 0;
 }
 .frameEnd{
-  top: -20px;
+  top: -10px;
 }
 .text {
   position: absolute;
@@ -56,45 +53,51 @@ body {
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
-  font-size: 2em;
+  font-size: 1.7rem;
   text-align: center;
 }
 .subtext {
   position: absolute;
   z-index: 10;
-  top: 58%;
+  top: 67%;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1rem;
   text-align: center;
 }
 .logo{
   position: absolute;
   z-index: 10;
-  bottom: -184px;
-  left: 16px;
-  width: 120px;
+  bottom: -192px;
+  right: 12px;
+  width: 80px;
   height: auto;
   opacity: 0;
 }
 .cta{
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  right: 120px;
+  transform: translateY(-50%);
   color: #fafafa;
-  font-size: .9rem;
+  font-size: .7rem;
   background: #333;
-  border-radius: 24px;
-  padding: 8px 32px;
-  bottom: 50px;
+  border-radius: 20px;
+  padding: 3px 20px;
   opacity: 0;
   z-index: 100;
   pointer-events: auto;
+  box-sizing: border-box;
+  border: 2px solid #333;
+}
+.cta:hover{
+  background: transparent;
+  color: #333;
 }
 .hint{
   position: absolute;
-  bottom : 8px;
-  right: 10px;
-  font-size: .7rem;
+  bottom : 6px;
+  left: 10px;
+  font-size: .5rem;
   font-style: italic;
   opacity: 0;
 }
